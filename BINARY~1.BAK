@@ -18,7 +18,7 @@ if(node==NULL)
     return newnode(key);
 if(key<node->key)
    node->left=insert(node->left,key);
-elseif(key>node->key)
+else if(key>node->key)
   node->right=insert(node->right,key);
   return node;
 }
@@ -68,3 +68,4 @@ postorder(root);
 getch();
 
 }
+
